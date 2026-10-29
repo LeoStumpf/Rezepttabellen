@@ -1,0 +1,29 @@
+{
+  "name": "@mrt/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "@capacitor/app": "7.1.2",
+    "@capacitor/camera": "7.0.5",
+    "@capacitor/core": "7.6.9",
+    "@capacitor/filesystem": "7.1.9",
+    "@capacitor/local-notifications": "7.0.7",
+    "@capacitor/share": "7.0.4",
+    "@mrt/shared": "*",
+    "dompurify": "3.4.17",
+    "marked": "18.1.1",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "6.2.4",
+    "@types/qrcode": "1.5.5",
+    "svelte": "5.57.2",
+    "svelte-check": "4.7.6",
+    "vite": "7.3.7"
+  }
+}

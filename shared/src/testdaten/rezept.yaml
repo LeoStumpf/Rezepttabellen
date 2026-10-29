@@ -1,0 +1,57 @@
+# Neutrales Test-Rezept (Struktur wie ein echtes: 12 Zutaten, 7 Schrittspalten)
+id: test-rezept
+titel: Testrezept
+portionen: 4
+zeit: { gesamt_min: 60, aktiv_min: 30 }
+tags: [ Test ]
+bilder: [ bild-1.jpg ]
+quelle:
+  name: Beispiel
+  url: https://example.org/rezept
+zutaten:
+  - { id: zwiebeln, menge: 3, einheit: Stück, name: Zutat 1, hinweis: Hinweis }
+  - { id: butter1, menge: 80, einheit: g, name: Zutat 2 }
+  - { id: knoblauch, menge: 2, einheit: Zehe, name: Zutat 3 }
+  - { id: butter2, menge: 20, einheit: g, name: Zutat 4 }
+  - { id: wein, menge: 150, einheit: ml, name: Zutat 5 }
+  - { id: parmesan, menge: 100, einheit: g, name: Zutat 6, hinweis: Hinweis }
+  - { id: pecorino, menge: 25, einheit: g, name: Zutat 7 }
+  - { id: salz, einheit: nach Geschmack, name: Zutat 8 }
+  - { id: pfeffer, einheit: nach Geschmack, name: Zutat 9 }
+  - { id: linguine, menge: 500, einheit: g, name: Zutat 10, hinweis: Hinweis }
+  - { id: zitrone, menge: 0.5, einheit: Stück, name: Zutat 11, hinweis: Hinweis }
+  - { id: petersilie, menge: 1, einheit: Bund, name: Zutat 12 }
+schritte:
+  - id: s1
+    text: Schritt 1
+    nimmt: [ zwiebeln ]
+  - id: s2
+    text: Schritt 2
+    nimmt: [ s1, butter1 ]
+  - id: s3
+    text: Schritt 3
+    nimmt: [ knoblauch ]
+  - id: s4
+    text: Schritt 4
+    nimmt: [ s2, s3, butter2 ]
+  - id: s5
+    text: Schritt 5
+    nimmt: [ s4, wein ]
+  - id: s6
+    text: Schritt 6
+    nimmt: [ parmesan, pecorino ]
+  - id: s7
+    text: Schritt 7
+    nimmt: [ s5, s6, salz, pfeffer ]
+  - id: s8
+    text: Schritt 8
+    nimmt: [ linguine ]
+  - id: s9
+    text: Schritt 9
+    nimmt: [ s7, s8 ]
+  - id: s10
+    text: Schritt 10
+    nimmt: [ petersilie ]
+  - id: s11
+    text: Schritt 11
+    nimmt: [ s9, zitrone, s10 ]

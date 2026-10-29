@@ -1,0 +1,170 @@
+:root {
+  --bg: #faf6f0;
+  --flaeche: #ffffff;
+  --text: #2a211b;
+  --text-leise: #7a6c62;
+  --linie: #d9cdbf;
+  --akzent: #b4532a;
+  --akzent-text: #ffffff;
+  --zutat-bg: #f4ece1;
+  --schritt-bg: #ffffff;
+  --warn: #b0451f;
+  --fehler: #b3261e;
+  --ok: #2e7d32;
+  --da: #2e7d32;
+  --da-bg: #e8f3e6;
+  --knapp: #9a6200;
+  --knapp-bg: #fcf0d2;
+  --kaufen: #b3261e;
+  --kaufen-bg: #fbe3df;
+  --schatten: 0 1px 2px rgb(60 40 20 / 0.08), 0 4px 16px rgb(60 40 20 / 0.08);
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #1b1714;
+    --flaeche: #26201c;
+    --text: #f1e8de;
+    --text-leise: #b3a497;
+    --linie: #4a3f37;
+    --akzent: #e07a4a;
+    --akzent-text: #1b1714;
+    --zutat-bg: #312923;
+    --schritt-bg: #26201c;
+    --warn: #f08a5d;
+    --da: #8fd18f;
+    --da-bg: #22301f;
+    --knapp: #f3c25c;
+    --knapp-bg: #3a2f17;
+    --kaufen: #ff8a7a;
+    --kaufen-bg: #3d1f1b;
+    --schatten: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 16px rgb(0 0 0 / 0.3);
+    color-scheme: dark;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  min-height: 100vh;
+}
+/* nichts darf die Seite seitlich verbreitern (sonst verschiebt sich am Handy die ganze Ansicht) */
+html,
+body {
+  overflow-x: clip;
+}
+a {
+  color: inherit;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 0.9em;
+  border-radius: 8px;
+  border: 1px solid var(--linie);
+  background: var(--flaeche);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.knopf:hover {
+  border-color: var(--akzent);
+}
+.knopf.primaer {
+  background: var(--akzent);
+  border-color: var(--akzent);
+  color: var(--akzent-text);
+  font-weight: 600;
+}
+.knopf.gefahr {
+  color: var(--fehler);
+}
+.knopf:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.seite-rand {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.fehlerbox {
+  border: 1px solid var(--fehler);
+  color: var(--fehler);
+  background: color-mix(in srgb, var(--fehler) 8%, transparent);
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+.fehlerbox ul {
+  margin: 0.3em 0 0;
+  padding-left: 1.2em;
+}
+.tag {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  background: var(--zutat-bg);
+  color: var(--text-leise);
+  font-size: 0.8rem;
+}
+input[type='text'],
+input[type='url'],
+input[type='number'],
+input[type='password'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.45em 0.6em;
+  border: 1px solid var(--linie);
+  border-radius: 6px;
+  background: var(--flaeche);
+}
+textarea {
+  resize: vertical;
+}
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-leise);
+}
+@media print {
+  .nicht-drucken {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff;
+  }
+}
+
+/* Vorrat-Status */
+.status-da {
+  color: var(--da);
+}
+.status-knapp {
+  color: var(--knapp);
+}
+.status-leer,
+.status-kaufen {
+  color: var(--kaufen);
+}

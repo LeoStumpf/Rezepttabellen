@@ -1,0 +1,7 @@
+{
+  "appId": "io.github.leostumpf.rezepttabellen",
+  "appName": "Rezepttabellen",
+  "webDir": "web/dist",
+  "android": { "path": "android" },
+  "server": { "androidScheme": "http", "cleartext": true }
+}

@@ -1,0 +1,6 @@
+First public release of Rezepttabellen (the app is in German).
+• Recipes as recipe tables: ingredients on the left, steps spanning the ingredients they use
+• Step cards, cooking mode with timers, scaling, shopping list, pantry and favourites
+• Recipe variants, import from websites, photo inbox for recipes from paper
+• Works offline with a copy of your collection and syncs with your own server
+No ads, no tracking, no account.

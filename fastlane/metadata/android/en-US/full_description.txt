@@ -1,0 +1,40 @@
+Rezepttabellen shows your recipes as recipe tables, the format made popular by Cooking for Engineers: ingredients run down the left, steps run to the right, and each step spans exactly the ingredients that go into it. You see at a glance what can start right away and what can wait.
+
+IMPORTANT BEFORE YOU INSTALL
+• The app is in German only.
+• It needs your own Rezepttabellen server. The server is free, self-hosted software that runs in Docker on a home server, NAS or Raspberry Pi. Without a server the app has nothing to show.
+• Setup: enter your server address and, if set, its password, then sync.
+
+READ AND COOK
+• Recipe table, step cards or a classic list
+• Scale servings, or enter how much of an ingredient you have
+• Cooking mode keeps the screen on and lets you tick off steps
+• Tap a time in a step to start a timer, with a notification even when the phone is locked
+• Print or save a recipe as a one-page A4 PDF
+• Share a recipe or its ingredients as text
+
+FIND RECIPES
+• Tiles, details or swipeable Discover view
+• Search titles, tags and ingredients; filter by diet and time
+• Fridge mode: enter what you have and find recipes that use it
+• Favourites, sorting and a cooking log with ratings
+• Variants of one recipe grouped and compared side by side
+
+PANTRY AND SHOPPING
+• Keep track of what you have at home
+• See at a glance what a recipe is missing
+• Shopping list that sums ingredients across recipes; share it as text
+
+ADD RECIPES
+• Editor with live table preview
+• Import from recipe websites, also straight from your browser's share menu
+• Photograph recipes from books and magazines; the photos go to your server's inbox
+
+OFFLINE AND PRIVATE
+• Every recipe is stored on your phone and works without a connection
+• Changes sync both ways with your server; nothing is lost on conflicts
+• Your recipes stay on your server as plain, readable files
+• No account, no ads, no analytics. The app talks only to the server you enter.
+
+Free software under the GNU AGPL v3. Source code: github.com/LeoStumpf/Rezepttabellen
+Built collaboratively with Claude, Anthropic's AI assistant, under human direction.

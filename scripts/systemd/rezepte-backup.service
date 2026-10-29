@@ -1,0 +1,6 @@
+[Unit]
+Description=Rezepte sichern (scripts/rezepte-backup.sh)
+
+[Service]
+Type=oneshot
+ExecStart=%h/git/MyRecipetables/scripts/rezepte-backup.sh

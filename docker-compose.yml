@@ -1,0 +1,16 @@
+services:
+  rezepte:
+    build: .
+    image: myrecipetables
+    container_name: rezepttabellen
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    # Dateien gehören deinem Benutzer, damit du sie auch von Hand bearbeiten kannst
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      # Optional: Passwort zum Speichern/Löschen
+      APP_PASSWORT: ""
+    volumes:
+      # Rezepte liegen außerhalb des Repos (Standard: ~/Rezepte), Backup siehe README
+      - ${REZEPTE_DIR:-~/Rezepte}:/app/data

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+# Rezepte & Vorrat liegen außerhalb des Repos (~/Rezepte), siehe README
+data/
+*.log
+# Vorbelegung fürs APK (Server-URL, Passwort)
+.env*.local
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
+# Private Hinweise für Claude (Symlink nach ~/.config/rezepttabellen)
+CLAUDE.local.md
